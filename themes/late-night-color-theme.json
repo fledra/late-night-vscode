@@ -1,7 +1,62 @@
 {
   "name": "Late Night",
-  "semanticHighlighting": true,
-  "colors": {},
+  "colors": {
+    "foreground": "#9da9b6",
+
+    "activityBar.background": "#171d23",
+    "activityBar.foreground": "#9da9b6bc",
+    "activityBar.inactiveForeground": "#9da9b63f",
+    "activityBar.activeBorder": "#171d2300",
+    "activityBar.border": "#1d252c",
+
+    "activityBarTop.background": "#171d23",
+    "activityBarTop.foreground": "#9da9b6bc",
+    "activityBarTop.inactiveForeground": "#9da9b63f",
+
+    "activityBarBadge.background": "#3c5250",
+    "activityBarBadge.foreground": "#c0cbd5",
+
+    "editor.background": "#1d252c",
+    "editor.selectionBackground": "#3a454e",
+    "editor.lineHighlightBackground": "#28313a",
+
+    "editorCursor.foreground": "#b5bdc5",
+
+    "editorActionList.background": "#171d23",
+
+    "editorGroupHeader.tabsBackground": "#171d23",
+
+    "icon.foreground": "#9da9b6bc",
+
+    "list.hoverBackground": "#242d34",
+
+    "panel.background": "#171d23",
+    "panel.border": "#1d252c",
+
+    "sideBar.background": "#171d23",
+    "sideBar.border": "#1d252c",
+
+    "statusBar.background": "#171d23",
+    "statusBar.foreground": "#9da9b6",
+    "statusBar.border": "#1d252c",
+
+    "titleBar.activeBackground": "#171d23",
+    "titleBar.activeForeground": "#9da9b6",
+    "titleBar.inactiveBackground": "#1d252c",
+    "titleBar.inactiveForeground": "#9da9b6bc",
+
+    "tab.activeBackground": "#1d252c",
+    "tab.activeForeground": "#9da9b6",
+    "tab.activeBorderTop": "#3c5250",
+    "tab.inactiveBackground": "#171d23",
+    "tab.inactiveForeground": "#9da9b66f",
+    "tab.hoverBackground": "#232c36",
+    "tab.hoverForeground": "#9da9b6",
+    "tab.border": "#1d252c",
+    "tab.activeBorder": "#1d252c",
+    "tab.dragAndDropBorder": "#9da9b66f"
+  },
   "tokenColors": [],
+  "semanticHighlighting": true,
   "semanticTokenColors": {}
 }
