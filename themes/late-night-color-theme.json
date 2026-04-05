@@ -2,6 +2,8 @@
   "name": "Late Night",
   "colors": {
     "foreground": "#9da9b6",
+    "errorForeground": "#de8383",
+
     "focusBorder": "#333f4a",
 
     "activityBar.background": "#171d23",
@@ -30,6 +32,25 @@
     "editorGroupHeader.tabsBackground": "#171d23",
 
     "icon.foreground": "#7c8792",
+
+    "input.background": "#242d34",
+    "input.foreground": "#9da9b6",
+    "input.border": "#242d34",
+    "input.placeholderForeground": "#636d77",
+
+    "inputOption.activeForeground": "#dfe4e9",
+    "inputOption.activeBorder": "#242d34",
+    "inputOption.hoverBackground": "#354351",
+
+    "inputValidation.errorBackground": "#9e2a2a",
+    "inputValidation.errorForeground": "#e9abab",
+    "inputValidation.errorBorder": "#c63535",
+    "inputValidation.warningBackground": "#c99d21",
+    "inputValidation.warningForeground": "#efe2b5",
+    "inputValidation.warningBorder": "#dfb43e",
+    "inputValidation.infoBackground": "#1a3a4a",
+    "inputValidation.infoForeground": "#b2d3e4",
+    "inputValidation.infoBorder": "#21495d",
 
     "list.hoverBackground": "#354351",
     "list.hoverForeground": "#c0cbd5",
