@@ -2,6 +2,7 @@
   "name": "Late Night",
   "colors": {
     "foreground": "#9da9b6",
+    "focusBorder": "#333f4a",
 
     "activityBar.background": "#171d23",
     "activityBar.foreground": "#7c8792",
@@ -16,6 +17,8 @@
     "activityBarBadge.background": "#3c5250",
     "activityBarBadge.foreground": "#c0cbd5",
 
+    "descriptionForeground": "#9da9b6",
+
     "editor.background": "#1d252c",
     "editor.selectionBackground": "#3a454e",
     "editor.lineHighlightBackground": "#28313a",
@@ -28,10 +31,31 @@
 
     "icon.foreground": "#7c8792",
 
-    "list.hoverBackground": "#242d34",
+    "list.hoverBackground": "#354351",
+    "list.hoverForeground": "#c0cbd5",
+    "list.activeSelectionBackground": "#354351",
+    "list.activeSelectionForeground": "#dfe4e9",
+    "list.activeSelectionIconForeground": "#dfe4e9",
+    "list.inactiveSelectionBackground": "#2f3b48",
+    "list.inactiveSelectionForeground": "#c0cbd5",
+    "list.focusOutline": "#3d4c59",
+    "list.errorForeground": "#e27e8d",
+    "list.warningForeground": "#ebbf83",
+
+    "menu.background": "#242d34",
+    "menu.foreground": "#c0cbd5",
+    "menu.border": "#242d34",
+    "menu.separatorBackground": "#3d464e",
 
     "panel.background": "#171d23",
     "panel.border": "#1d252c",
+
+    "pickerGroup.border": "#3d464e",
+
+    "quickInput.background": "#242d34",
+    "quickInput.foreground": "#9da9b6",
+    "quickInputList.focusBackground": "#354351",
+    "quickInputList.focusForeground": "#c0cbd5",
 
     "sideBar.background": "#171d23",
     "sideBar.border": "#1d252c",
