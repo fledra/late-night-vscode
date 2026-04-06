@@ -19,6 +19,17 @@
     "activityBarBadge.background": "#3c5250",
     "activityBarBadge.foreground": "#c3cdd7",
 
+    "button.background": "#2a353d",
+    "button.foreground": "#c3cdd7",
+    "button.hoverBackground": "#354451",
+    "button.secondaryBackground": "#2a353d",
+    "button.secondaryForeground": "#c3cdd7",
+    "button.secondaryHoverBackground": "#354451",
+
+    "checkbox.background": "#2a353d",
+    "checkbox.foreground": "#c3cdd7",
+    "checkbox.border": "#354451",
+
     "descriptionForeground": "#9da9b6",
 
     "dropdown.listBackground": "#2a353d",
@@ -38,6 +49,11 @@
 
     "editorWidget.background": "#171d23",
     "editorWidget.border": "#3d464e",
+
+    "extensionButton.background": "#2a353d",
+    "extensionButton.foreground": "#c3cdd7",
+    "extensionButton.hoverBackground": "#354451",
+    "extensionButton.separator": "#48535c",
 
     "icon.foreground": "#7c8792",
 
@@ -114,6 +130,8 @@
     "tab.border": "#1d252c",
     "tab.activeBorder": "#1d252c",
     "tab.dragAndDropBorder": "#545f68",
+
+    "toolbar.hoverBackground": "#35445164",
 
     "widget.shadow": "#00000042"
   },
