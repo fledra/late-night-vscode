@@ -19,6 +19,9 @@
     "activityBarBadge.background": "#3c5250",
     "activityBarBadge.foreground": "#c3cdd7",
 
+    "badge.background": "#3c5250",
+    "badge.foreground": "#c3cdd7",
+
     "button.background": "#2a353d",
     "button.foreground": "#c3cdd7",
     "button.hoverBackground": "#354451",
@@ -98,6 +101,8 @@
 
     "pickerGroup.border": "#3d464e",
 
+    "progressBar.background": "#3c5250",
+
     "quickInput.background": "#242d34",
     "quickInput.foreground": "#9da9b6",
     "quickInputList.focusBackground": "#1c242b",
@@ -108,6 +113,10 @@
 
     "sideBar.background": "#171d23",
     "sideBar.border": "#1d252c",
+
+    "sideBarSectionHeader.background": "#1f2830",
+    "sideBarSectionHeader.foreground": "#9da9b6",
+    "sideBarSectionHeader.border": "#1f2830",
 
     "scrollbar.shadow": "#00000042",
 
