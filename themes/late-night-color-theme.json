@@ -110,6 +110,7 @@
 
     "settings.focusedRowBorder": "#3d464e",
     "settings.rowHoverBackground": "#2a353d4f",
+    "settings.modifiedItemIndicator": "#3c5250",
 
     "sideBar.background": "#171d23",
     "sideBar.border": "#1d252c",
