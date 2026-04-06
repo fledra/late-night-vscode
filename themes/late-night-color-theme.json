@@ -21,6 +21,11 @@
 
     "descriptionForeground": "#9da9b6",
 
+    "dropdown.listBackground": "#2a353d",
+    "dropdown.background": "#2a353d",
+    "dropdown.foreground": "#9da9b6",
+    "dropdown.border": "#2a353d",
+
     "editor.background": "#1d252c",
     "editor.selectionBackground": "#3a454e",
     "editor.lineHighlightBackground": "#28313a",
@@ -31,16 +36,20 @@
 
     "editorGroupHeader.tabsBackground": "#171d23",
 
+    "editorWidget.background": "#171d23",
+    "editorWidget.border": "#3d464e",
+
     "icon.foreground": "#7c8792",
 
-    "input.background": "#242d34",
-    "input.foreground": "#9da9b6",
-    "input.border": "#242d34",
-    "input.placeholderForeground": "#636d77",
+    "input.background": "#2a353d",
+    "input.foreground": "#c3cdd7",
+    "input.border": "#2a353d",
+    "input.placeholderForeground": "#7c8792",
 
     "inputOption.activeForeground": "#dfe4e9",
-    "inputOption.activeBorder": "#242d34",
-    "inputOption.hoverBackground": "#354351",
+    "inputOption.activeBorder": "#1c242b",
+    "inputOption.activeBackground":"#1c242b",
+    "inputOption.hoverBackground": "#242d34",
 
     "inputValidation.errorBackground": "#9e2a2a",
     "inputValidation.errorForeground": "#e9abab",
