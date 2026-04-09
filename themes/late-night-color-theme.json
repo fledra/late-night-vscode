@@ -41,6 +41,10 @@
     "checkbox.foreground": "#c3cdd7",
     "checkbox.border": "#354451",
 
+    "commandCenter.background": "#1c242b",
+    "commandCenter.foreground": "#9da9b6",
+    "commandCenter.border": "#242d34",
+
     "diffEditor.removedLineBackground": "#c635356f",
     "diffEditor.insertedLineBackground": "#8bd49c3f",
 
