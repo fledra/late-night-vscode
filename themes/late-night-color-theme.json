@@ -186,6 +186,15 @@
     "merge.incomingHeaderBackground": "#8bd49c3f",
     "merge.currentHeaderBackground": "#c635356f",
 
+    "notificationCenterHeader.background": "#242d34",
+    "notificationCenterHeader.foreground": "#9da9b6",
+    "notifications.background": "#1c242b",
+    "notifications.foreground": "#9da9b6",
+    "notificationToast.border": "#333f4a",
+    "notificationsErrorIcon.foreground": "#de8383",
+    "notificationsWarningIcon.foreground": "#ebbf83",
+    "notificationsInfoIcon.foreground": "#539afc",
+
     "panel.background": "#171d23",
     "panel.border": "#1d252c",
     "panelTitle.activeForeground": "#c3cdd7",
