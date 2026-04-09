@@ -186,6 +186,14 @@
     "merge.incomingHeaderBackground": "#8bd49c3f",
     "merge.currentHeaderBackground": "#c635356f",
 
+    "minimap.errorHighlight": "#de8383",
+    "minimap.warningHighlight": "#ebbf83",
+    "minimapGutter.addedBackground": "#8bd49c",
+    "minimapGutter.deletedBackground": "#c63535",
+    "minimapSlider.background": "#3c52503f",
+    "minimapSlider.hoverBackground": "#3c52506f",
+    "minimapSlider.activeBackground": "#3c52509f",
+
     "notificationCenterHeader.background": "#242d34",
     "notificationCenterHeader.foreground": "#9da9b6",
     "notifications.background": "#1c242b",
