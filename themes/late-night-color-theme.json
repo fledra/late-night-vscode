@@ -4,7 +4,9 @@
     "foreground": "#9da9b6",
     "errorForeground": "#de8383",
     "descriptionForeground": "#9da9b6",
+    "disabledForeground": "#3d464e",
     "focusBorder": "#333f4a",
+    "contrastBorder": "#333f4a00",
 
     "activityBar.background": "#171d23",
     "activityBar.foreground": "#7c8792",
@@ -46,7 +48,9 @@
     "commandCenter.border": "#242d34",
 
     "diffEditor.removedLineBackground": "#c635356f",
+    "diffEditor.removedTextBackground": "#c635356f",
     "diffEditor.insertedLineBackground": "#8bd49c3f",
+    "diffEditor.insertedTextBackground": "#8bd49c3f",
 
     "debugToolBar.background": "#242d34",
     "debugExceptionWidget.background": "#242d34",
@@ -125,6 +129,7 @@
     "editorSuggestWidget.border": "#192026",
     "editorSuggestWidget.foreground": "#9da9b6",
     "editorSuggestWidget.highlightForeground": "#ebbf83",
+    "editorSuggestWidget.focusHighlightForeground": "#4b84b4",
     "editorSuggestWidget.selectedBackground": "#242d34",
     "editorSuggestWidget.selectedForeground": "#c3cdd7",
     "editorOverviewRuler.border": "#333f4a",
@@ -192,6 +197,7 @@
     "list.activeSelectionIconForeground": "#c3cdd7",
     "list.inactiveSelectionBackground": "#242d34",
     "list.inactiveSelectionForeground": "#c3cdd7",
+    "list.dropBackground": "#242d34",
     "list.focusOutline": "#242d34",
     "list.errorForeground": "#de8383",
     "list.warningForeground": "#ebbf83",
@@ -200,6 +206,8 @@
     "menu.foreground": "#a0acb8",
     "menu.border": "#242d34",
     "menu.separatorBackground": "#3d464e",
+    "menubar.selectionBackground": "#242d34",
+    "menubar.selectionForeground": "#c3cdd7",
 
     "merge.incomingHeaderBackground": "#8bd49c3f",
     "merge.currentHeaderBackground": "#c635356f",
@@ -240,6 +248,7 @@
     "peekViewTitleDescription.foreground": "#7c8792",
 
     "pickerGroup.border": "#3d464e",
+    "pickerGroup.foreground": "#c3cdd7",
 
     "progressBar.background": "#3c5250",
 
