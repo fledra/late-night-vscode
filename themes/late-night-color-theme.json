@@ -20,6 +20,12 @@
     "badge.background": "#3c5250",
     "badge.foreground": "#c3cdd7",
 
+    "breadcrumb.background": "#1d252c",
+    "breadcrumb.foreground": "#7c8792",
+    "breadcrumb.focusForeground": "#9da9b6",
+    "breadcrumb.activeSelectionForeground": "#9da9b6",
+    "breadcrumbPicker.background": "#242d34",
+
     "button.background": "#2a353d",
     "button.foreground": "#c3cdd7",
     "button.hoverBackground": "#354451",
