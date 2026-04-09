@@ -165,6 +165,18 @@
     "panelTitle.activeBorder": "#c3cdd7",
     "panelTitle.inactiveForeground": "#6f7a85",
 
+    "peekView.border": "#333f4a",
+    "peekViewEditor.background": "#242d34",
+    "peekViewEditor.matchHighlightBackground": "#c3cdd730",
+    "peekViewResult.background": "#242d34",
+    "peekViewResult.fileForeground": "#c3cdd7",
+    "peekViewResult.lineForeground": "#7c8792",
+    "peekViewResult.matchHighlightBackground": "#c3cdd730",
+    "peekViewResult.selectionBackground": "#3a454e",
+    "peekViewTitle.background": "#242d34",
+    "peekViewTitleLabel.foreground": "#c3cdd7",
+    "peekViewTitleDescription.foreground": "#7c8792",
+
     "pickerGroup.border": "#3d464e",
 
     "progressBar.background": "#3c5250",
