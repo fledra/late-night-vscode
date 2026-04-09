@@ -256,6 +256,9 @@
     "sideBarSectionHeader.border": "#1f2830",
 
     "scrollbar.shadow": "#00000042",
+    "scrollbarSlider.background": "#6b71773f",
+    "scrollbarSlider.hoverBackground": "#6b71775f",
+    "scrollbarSlider.activeBackground": "#6b71777f",
 
     "statusBar.background": "#171d23",
     "statusBar.foreground": "#9da9b6",
