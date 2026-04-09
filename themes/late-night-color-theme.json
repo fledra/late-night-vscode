@@ -175,6 +175,13 @@
     "inputValidation.infoForeground": "#b2d3e4",
     "inputValidation.infoBorder": "#21495d",
 
+    "gitDecoration.untrackedResourceForeground": "#8bd49c",
+    "gitDecoration.addedResourceForeground": "#8bd49c",
+    "gitDecoration.deletedResourceForeground": "#de8383",
+    "gitDecoration.modifiedResourceForeground": "#ebbf83",
+    "gitDecoration.conflictingResourceForeground": "#33ced8",
+    "gitDecoration.ignoredResourceForeground": "#41505e",
+
     "list.hoverBackground": "#1c242b",
     "list.hoverForeground": "#c3cdd7",
     "list.activeSelectionBackground": "#242d34",
