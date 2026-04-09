@@ -189,6 +189,8 @@
     "statusBar.background": "#171d23",
     "statusBar.foreground": "#9da9b6",
     "statusBar.border": "#1d252c",
+    "statusBarItem.hoverBackground": "#dfe4e91f",
+    "statusBarItem.hoverForeground": "#c3cdd7",
 
     "titleBar.activeBackground": "#171d23",
     "titleBar.activeForeground": "#9da9b6",
