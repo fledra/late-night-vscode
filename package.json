@@ -14,7 +14,7 @@
     "url": "https://github.com/fledra/late-night-vscode/issues"
   },
   "engines": {
-    "vscode": "^1.32.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Themes"
