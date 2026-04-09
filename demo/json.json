@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "theme-stress-test",
+  "version": "1.0.0",
+  "description": "Testing nested keys, escapable characters, and types.",
+  "private": true,
+  "engines": {
+    "vscode": "^1.60.0",
+    "node": ">=18.0.0"
+  },
+  "keywords": ["theme", "testing", "deep-red", "info-blue"],
+  "author": {
+    "name": "Developer",
+    "url": "https://example.com/dev",
+    "metadata": {
+      "verified": true,
+      "id": 987654321,
+      "rating": 4.5,
+      "null_test": null
+    }
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "My Custom Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/my-theme.json"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "theme.enableHighContrast": {
+          "type": "boolean",
+          "default": false,
+          "markdownDescription": "Enable the **High Contrast** mode for the editor."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vsce package --baseContentUrl https://raw.githubusercontent.com/user/repo/main/"
+  },
+  "complex_structure": [
+    {
+      "id": "item-001",
+      "data": [10, 20, 30],
+      "active": true
+    },
+    {
+      "id": "item-002",
+      "data": [],
+      "active": false,
+      "tags": null
+    }
+  ],
+  "escaped_characters": "Line 1\nLine 2\tTabbed\n\"Quotes\" and \\ Backslashes",
+  "unicode_test": "\u0040 \u2713 \u2622"
+}

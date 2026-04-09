@@ -1,0 +1,87 @@
+/* 1. Root Variables and At-Rules */
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+  --primary-blue: #1a3a4a;
+  --accent-red: #5a1d1d;
+  --spacing-unit: 10px;
+  --transition-speed: 0.3s;
+}
+
+/* 2. Complex Selectors and Pseudo-elements */
+#main-layout .container > article[data-theme='dark']::before {
+  content: 'Selection: ';
+  display: block;
+  color: var(--accent-red);
+  font-weight: bold;
+}
+
+/* 3. Combinators and Specificity */
+header + main section:nth-of-type(2n + 1):not(.hidden) {
+  background-color: rgba(26, 58, 74, 0.05);
+  border: 1px solid var(--primary-blue);
+}
+
+/* 4. Properties, Units, and Functions */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: calc(var(--spacing-unit) * 2);
+  width: min(90vw, 1200px);
+  padding: 1rem 15px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* 5. Keyframes and Animations */
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%) rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.animate-target {
+  animation: slide-in var(--transition-speed) ease-in-out forwards;
+  will-change: transform, opacity;
+}
+
+/* 6. Media Queries and Logic */
+@media screen and (max-width: 768px), print {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #main-layout {
+    margin: 0 !important;
+  }
+}
+
+/* 7. Modern CSS Nesting (Recent VS Code support) */
+.parent-element {
+  color: black;
+
+  & .child-element {
+    color: var(--primary-blue);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* 8. Vendor Prefixes and Edge Cases */
+input::-webkit-input-placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.legacy-support {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}

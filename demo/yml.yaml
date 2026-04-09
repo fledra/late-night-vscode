@@ -1,0 +1,61 @@
+# YAML Stress Test - Infrastructure & CI/CD Style
+# This tests indentation, keys, and block scalars
+
+version: '3.8'
+
+# 1. Anchors and Aliases (The & and * symbols)
+default_settings: &default_config
+  timeout: 30
+  retry: 3
+  environment: production
+  labels:
+    - 'tier:backend'
+    - 'version:v1'
+
+services:
+  web_server:
+    <<: *default_config # Merging the anchor
+    image: nginx:latest
+    ports:
+      - '80:80'
+      - '443:443'
+    command: ['nginx', '-g', 'daemon off;'] # Flow style sequence
+
+  # 2. Complex Nested Mapping
+  database_cluster:
+    hosts:
+      - ip: 10.0.0.1
+        role: master
+      - ip: 10.0.0.2
+        role: slave
+    config:
+      max_connections: 5000
+      ssl_enabled: !!bool true # Explicit type tag
+      buffer_size: 128mb
+
+  # 3. Block Scalars (Literal and Folded)
+  scripts:
+    setup_db: |
+      #!/bin/bash
+      echo "Initializing database..."
+      mysql -u root -p < schema.sql
+    description: >
+      This is a folded string.
+      Newlines are converted to spaces,
+      but empty lines remain.
+
+# 4. Diverse Types & Values
+data_types:
+  integer: 12345
+  float: 3.14159
+  boolean_yes: yes # YAML 1.1 allows yes/no as bools
+  boolean_no: no
+  null_value: ~ # Tilde is null in YAML
+  timestamp: 2026-04-09T18:30:00Z
+  hex_value: 0x123
+
+# 5. Key with special characters
+'complex key: name': 'Value'
+? - key_part_1
+  - key_part_2
+: complex_value

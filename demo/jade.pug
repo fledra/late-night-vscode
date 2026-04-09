@@ -1,0 +1,61 @@
+//- 1. Mixins and Logic
+mixin navItem(href, name, active)
+  li.nav-item(class=active ? 'active' : '')
+    a.nav-link(href=href)= name
+
+//- 2. Layout Inheritance
+doctype html
+html(lang='en')
+  head
+    title Theme Stress Test - Pug
+    meta(charset='utf-8')
+    //- Testing variables and interpolation
+    - const primaryColor = '#1a3a4a'
+    - const accentColor = '#5a1d1d'
+
+    style.
+      :root {
+        --bg-main: #{primaryColor};
+        --accent: #{accentColor};
+      }
+
+  body#main-layout.theme-deep-red-blue
+    header
+      h1.title Section: Pug Testing
+      p.subtitle
+        | This is a multi-line pipe text test.
+        | It checks how the theme handles plain text
+        | vs indented tags.
+
+    //- 3. Attributes and Shorthands
+    main.container
+      section#gallery.grid-layout(data-loading='false')
+        each val, index in ['Red', 'Blue', 'Grey']
+          .card(class=`card-${index}`)
+            h3= val
+            p Item number #{index + 1}
+            button.btn.btn-primary(type='button' disabled=false)
+              span.icon.icon-plus
+              | Click Me
+
+    //- 4. Conditional Blocks
+    footer
+      if user.isAdmin
+        p.admin-badge Logged in as Admin
+      else
+        p.guest-link Please
+          a(href='/login') login
+
+      //- 5. Case Statements
+      case status
+        when 'success'
+          .alert.success Order Complete
+        when 'error'
+          .alert.error(style=`color: ${accentColor}`) System Failure
+        default
+          .alert.info Processing...
+
+    //- 6. Script Blocks with JS Syntax
+    script(type='text/javascript').
+      const theme = 'Pug-Test';
+      console.log(`Initialized ${theme} at ${new Date().toLocaleTimeString()}`);

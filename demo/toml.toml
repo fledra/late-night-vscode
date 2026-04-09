@@ -1,0 +1,55 @@
+# This is a TOML Stress Test
+# Testing Headers, Keys, and diverse Value types
+
+[project]
+name = "theme-tester"
+version = "1.2.3"
+description = "A 'worst-case' scenario for TOML highlighting"
+authors = ["Dev <dev@example.com>", "Contributor"] # Array of strings
+
+[project.metadata]
+id = 99
+active = true
+ratio = 0.85
+null_proxy = "none" # TOML has no null, usually represented by strings
+
+# Testing multi-line strings and escape characters
+[project.description_long]
+simple = "The quick brown fox..."
+multiline = """
+This is a multi-line string.
+It can contain "quotes" and
+special characters like \u0040.
+"""
+
+# Testing Tables and Arrays of Tables
+[[bin]]
+name = "tester-cli"
+path = "src/main.rs"
+
+[[bin]]
+name = "tester-gui"
+path = "src/gui.rs"
+
+[database]
+server = "192.168.1.1"
+ports = [ 8000, 8001, 8002 ]
+connection_max = 5_000 # Testing number underscores
+
+# Testing Date and Time (Unique to TOML)
+[timestamps]
+offset_date_time = 1979-05-27T07:32:00Z
+local_date_time = 1979-05-27T07:32:00
+local_date = 1979-05-27
+local_time = 07:32:00
+
+[nested.deep.structure]
+key = "Value"
+"quoted.key" = "Testing keys with dots" # Quoted keys
+'literal.key' = 'No \ escapes here'    # Literal strings
+
+# Hex, Octal, and Binary (TOML 1.0.0+)
+[numbers]
+hex = 0xDEADBEEF
+oct = 0o755
+bin = 0b11010110

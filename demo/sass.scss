@@ -1,0 +1,104 @@
+/* 1. Variables, Maps, and Functions */
+$primary-blue: #1a3a4a;
+$accent-red: #5a1d1d;
+$breakpoints: (
+  'small': 480px,
+  'medium': 768px,
+  'large': 1024px,
+);
+
+@function calculate-rem($size) {
+  $rem-size: $size / 16px;
+  @return #{$rem-size}rem;
+}
+
+/* 2. Mixins and Control Flow */
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn 'Unknown breakpoint: #{$breakpoint}.';
+  }
+}
+
+/* 3. Nested Selectors and Parent Selector Reference */
+.main-navigation {
+  @include flex-center(row);
+  background-color: $primary-blue;
+  padding: calculate-rem(20px);
+
+  .nav-list {
+    list-style: none;
+    margin: 0;
+
+    &__item {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: lighten($accent-red, 20%);
+          background: rgba($accent-red, 0.1);
+        }
+
+        &.is-active {
+          border-bottom: 2px solid $accent-red;
+        }
+      }
+    }
+  }
+}
+
+/* 4. Lists, Loops, and Interpolation */
+$status-list: 'success', 'error', 'warning', 'info';
+
+@each $status in $status-list {
+  .alert-#{$status} {
+    border-left: 5px solid;
+
+    @if $status == 'error' {
+      border-color: $accent-red;
+      background-color: rgba($accent-red, 0.05);
+    } @else if $status == 'success' {
+      border-color: #2ecc71;
+    } @else {
+      border-color: #ccc;
+    }
+
+    &::before {
+      content: 'Status: #{$status}';
+      text-transform: capitalize;
+    }
+  }
+}
+
+/* 5. Inheritance and Math */
+%visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.hidden-label {
+  @extend %visual-hidden;
+  width: 100px + 50px; // Testing operators
+  opacity: (80 / 100);
+}

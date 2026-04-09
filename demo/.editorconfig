@@ -1,0 +1,33 @@
+# 1. Root Property
+root = true
+
+# 2. Global settings for all files
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# 3. Language-specific overrides
+[*.{c,cpp,h,hpp}]
+indent_size = 4
+# Testing path-specific globs
+[{Makefile,Dockerfile}]
+indent_style = tab
+
+[*.{cs,php,rb}]
+indent_size = 4
+curly_bracket_next_line = true
+
+[*.{md,ps1}]
+trim_trailing_whitespace = false
+
+# 4. Complex Glob Patterns
+[lib/**.js]
+indent_size = 2
+
+[**/test/**.remote.styl]
+indent_style = space
+indent_size = 2
