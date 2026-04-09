@@ -16,6 +16,10 @@
     "activityBarTop.inactiveForeground": "#3d464e",
     "activityBarBadge.background": "#3c5250",
     "activityBarBadge.foreground": "#c3cdd7",
+    "activityErrorBadge.background": "#b85f60",
+    "activityErrorBadge.foreground": "#efdbdb",
+    "activityWarningBadge.background": "#c99d21",
+    "activityWarningBadge.foreground": "#efe2b5",
 
     "badge.background": "#3c5250",
     "badge.foreground": "#c3cdd7",
