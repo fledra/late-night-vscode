@@ -152,8 +152,11 @@
 
     "extensionButton.background": "#2a353d",
     "extensionButton.foreground": "#c3cdd7",
-    "extensionButton.hoverBackground": "#354451",
     "extensionButton.separator": "#48535c",
+    "extensionButton.hoverBackground": "#354451",
+    "extensionButton.prominentBackground": "#3c5250",
+    "extensionButton.prominentForeground": "#c3cdd7",
+    "extensionButton.prominentHoverBackground": "#3c5250",
 
     "icon.foreground": "#7c8792",
 
