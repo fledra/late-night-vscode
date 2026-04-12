@@ -1,5 +1,6 @@
 {
   "name": "Late Night",
+  "semanticHighlighting": true,
   "colors": {
     "foreground": "#9da9b6",
     "errorForeground": "#de8383",
@@ -355,7 +356,48 @@
 
     "widget.shadow": "#00000042"
   },
-  "tokenColors": [],
-  "semanticHighlighting": true,
-  "semanticTokenColors": {}
+  "tokenColors": [
+    {
+      "scope": ["comment", "string.comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#41505e"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#5ec4ff"
+      }
+    },
+    {
+      "scope": "constant",
+      "settings": {
+        "foreground": "#e27e8d"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#68a1f0"
+      }
+    },
+    {
+      "scope": "storage",
+      "settings": {
+        "foreground": "#008b94"
+      }
+    },
+    {
+      "scope": "storage.modifier",
+      "settings": {
+        "foreground": "#5ec4ff"
+      }
+    },
+    {
+      "scope": "punctuation",
+      "settings": {
+        "foreground": "#718ca1"
+      }
+    }
+  ]
 }
