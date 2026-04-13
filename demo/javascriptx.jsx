@@ -20,7 +20,7 @@ const HighOrderComponent = ({ children, renderOverlay }) => {
   );
 };
 
-export default function ThemeTester({ user = { name: 'Guest', roles: [] }, isActive = false, onAction }) {
+export default async function ThemeTester({ user = { name: 'Guest', roles: [] }, isActive = false, onAction }) {
   const [count, setCount] = useState(0);
   const [items, setItems] = useState([]);
 

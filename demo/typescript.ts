@@ -28,11 +28,18 @@ export class ThemeTester<T extends Record<string, any>> extends BaseProvider {
     const localInferred = 100; // Semantic: variable.readonly
     let mutableValue: any = 'test';
 
+    mutableValue = 'test2';
+    console.log(mutableValue)
+
     if (typeof data === 'object' && data !== null) {
       console.log(`Processing: ${this.name.toUpperCase()}`); // Template literal
+    } else {
     }
 
     try {
+      await new Promise((resolve) => {
+        return setTimeout(resolve);
+      })
       return Array.isArray(data) ? data[0] : (data as any);
     } catch (error: unknown) {
       throw new Error(error instanceof Error ? error.message : 'Abort');
@@ -60,6 +67,9 @@ enum Status {
   Error = 1,
 }
 
+type a = Status | IsString<number>;
+const x: a = 'No';
+
 interface MetaData {
   readonly timestamp: number;
   tags?: string[];
@@ -82,5 +92,10 @@ const GLOBAL_CONFIG = Object.freeze({
   api: 'https://api.example.com',
   retry: 3,
 });
+
+namespace.someFunction();
+console.log(namespace);
+
+type Foo = Omit<TestInterface, 'id'>;
 
 export default runTest;
