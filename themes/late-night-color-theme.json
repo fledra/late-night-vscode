@@ -575,5 +575,27 @@
         "foreground": "#70e1e8"
       }
     },
+    {
+      "scope": "source.yaml entity.name.tag",
+      "settings": {
+        "foreground": "#70e1e8"
+      }
+    },
+    {
+      "scope": "source.yaml storage.type.tag.shorthand",
+      "settings": {
+        "foreground": "#33CED8"
+      }
+    },
+    {
+      "scope": [
+        "source.yaml variable.other.anchor",
+        "source.yaml punctuation.definition.tag",
+        "source.yaml punctuation.definition.anchor"
+      ],
+      "settings": {
+        "foreground": "#ebbf83"
+      }
+    }
   ]
 }
