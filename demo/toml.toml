@@ -33,7 +33,7 @@ path = "src/gui.rs"
 
 [database]
 server = "192.168.1.1"
-ports = [ 8000, 8001, 8002 ]
+ports = [ 8000, 8001, 8002, "asd" ]
 connection_max = 5_000 # Testing number underscores
 
 # Testing Date and Time (Unique to TOML)

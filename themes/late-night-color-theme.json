@@ -596,6 +596,12 @@
       "settings": {
         "foreground": "#ebbf83"
       }
+    },
+    {
+      "scope": ["source.toml support.type.property-name.table", "source.toml support.type.property-name.array"],
+      "settings": {
+        "foreground": "#70e1e8"
+      }
     }
   ]
 }
