@@ -382,6 +382,12 @@
       }
     },
     {
+      "scope": "meta",
+      "settings": {
+        "foreground": "#718ca1"
+      }
+    },
+    {
       "scope": [
         "string",
         "string.template",
@@ -476,7 +482,8 @@
         "entity.name.type.alias",
         "entity.name.type.instance",
         "entity.name.type.interface",
-        "entity.name.type.enum"
+        "entity.name.type.enum",
+        "entity.name.type.module"
       ],
       "settings": {
         "foreground": "#70e1e8"
@@ -504,6 +511,18 @@
       "scope": "support.type.primitive",
       "settings": {
         "foreground": "#33ced8"
+      }
+    },
+    {
+      "scope": "support.class.component",
+      "settings": {
+        "foreground": "#33ced8"
+      }
+    },
+    {
+      "scope": "support.class.component",
+      "settings": {
+        "foreground": "#008b94"
       }
     },
     {
@@ -593,6 +612,13 @@
       }
     },
     {
+      "name": "JSX Generic Element",
+      "scope": "meta.jsx.children entity.name.type",
+      "settings": {
+        "foreground": "#70e1e8"
+      }
+    },
+    {
       "scope": "source.yaml entity.name.tag",
       "settings": {
         "foreground": "#70e1e8"
@@ -618,6 +644,18 @@
       "scope": ["source.toml support.type.property-name.table", "source.toml support.type.property-name.array"],
       "settings": {
         "foreground": "#70e1e8"
+      }
+    },
+    {
+      "scope": "source.ruby variable.other.readwrite",
+      "settings": {
+        "foreground": "#718ca1"
+      }
+    },
+    {
+      "scope": "source.ruby constant.language.symbol.hashkey",
+      "settings": {
+        "foreground": "#718ca1"
       }
     }
   ]
