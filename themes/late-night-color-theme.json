@@ -80,7 +80,7 @@
     "dropdown.border": "#2a353d",
 
     "editor.background": "#1d252c",
-    "editor.foreground": "#c3cdd7",
+    "editor.foreground": "#b7c5d3",
     "editor.selectionBackground": "#28323abc",
     "editor.selectionHighlightBackground": "#28313abc",
     "editor.inactiveSelectionBackground": "#28313a9f",
@@ -358,7 +358,13 @@
   },
   "tokenColors": [
     {
-      "scope": ["comment", "string.comment", "punctuation.definition.comment"],
+      "scope": [
+        "comment",
+        "string.comment",
+        "string.quoted.docstring",
+        "string.quoted.docstring punctuation.definition.string",
+        "punctuation.definition.comment"
+      ],
       "settings": {
         "foreground": "#41505e"
       }
@@ -409,6 +415,12 @@
       "scope": "punctuation.accessor",
       "settings": {
         "foreground": "#b7c5d3"
+      }
+    },
+    {
+      "scope": "punctuation.separator.annotation.result",
+      "settings": {
+        "foreground": "#5ec4ff"
       }
     },
     {
@@ -471,6 +483,29 @@
     },
     {
       "scope": "entity",
+      "settings": {
+        "foreground": "#70e1e8"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function",
+        "meta.function-call",
+        "meta.function-call support.type",
+        "support.function.builtin",
+        "support.function.magic"
+      ],
+      "settings": {
+        "foreground": "#70e1e8"
+      }
+    },
+    {
+      "scope": [
+        "meta.decorator",
+        "meta.decorator variable.other.readwrite",
+        "meta.function.decorator",
+        "meta.function.decorator support.type"
+      ],
       "settings": {
         "foreground": "#70e1e8"
       }
@@ -656,6 +691,24 @@
       "scope": "source.ruby constant.language.symbol.hashkey",
       "settings": {
         "foreground": "#718ca1"
+      }
+    },
+    {
+      "scope": "source.python meta.function-call.arguments",
+      "settings": {
+        "foreground": "#b7c5d3"
+      }
+    },
+    {
+      "scope": "source.python meta.function support.type",
+      "settings": {
+        "foreground": "#008b94"
+      }
+    },
+    {
+      "scope": "source.python constant.other",
+      "settings": {
+        "foreground": "#8bd49c"
       }
     }
   ]
