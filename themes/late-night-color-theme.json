@@ -510,7 +510,10 @@
       "scope": [
         "source.css entity.name.tag",
         "source.css entity.other.attribute-name.id",
+        "source.css entity.other.attribute-name.id punctuation.definition.entity",
         "source.css entity.other.attribute-name.class",
+        "source.css entity.other.attribute-name.class punctuation.definition.entity",
+        "source.css entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity",
         "source.css meta.property-name",
         "source.css meta.property-list",
         "source.css punctuation.definition.tag",
@@ -521,15 +524,29 @@
       }
     },
     {
-      "scope": "source.css entity.other.attribute-name",
+      "scope": [
+        "source.css entity.other.attribute-name",
+        "source.css entity.other.attribute-name punctuation.definition.entity",
+        "source.css entity.other.attribute-name.pseudo-class",
+        "source.css entity.other.attribute-name.pseudo-class punctuation.definition.entity"
+      ],
       "settings": {
         "foreground": "#33ced8"
       }
     },
     {
-      "scope": "source.css entity.other.attribute-name.pseudo-element",
+      "scope": [
+        "source.css entity.other.attribute-name.pseudo-element",
+        "source.css entity.other.attribute-name.pseudo-element punctuation.definition.entity"
+      ],
       "settings": {
         "foreground": "#5ec4ff"
+      }
+    },
+    {
+      "scope": "source.css entity.name.tag.reference",
+      "settings": {
+        "foreground": "#70e1e8"
       }
     },
     {
