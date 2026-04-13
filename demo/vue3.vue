@@ -20,7 +20,7 @@
         </div>
       </section>
 
-      <div v-else class="loading-spinner">
+      <div class="loading-spinner">
         <p>Fetching data from {{ apiEndpoint }}...</p>
       </div>
     </main>

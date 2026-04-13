@@ -1,6 +1,6 @@
 {
   "name": "Late Night",
-  "semanticHighlighting": true,
+  "semanticHighlighting": false,
   "colors": {
     "foreground": "#9da9b6",
     "errorForeground": "#de8383",
@@ -376,9 +376,79 @@
       }
     },
     {
-      "scope": "string",
+      "scope": "invalid",
+      "settings": {
+        "foreground": "#d95468"
+      }
+    },
+    {
+      "scope": [
+        "string",
+        "string.template",
+        "meta.template.expression",
+        "punctuation.definition.string",
+        "punctuation.definition.template-expression"
+      ],
       "settings": {
         "foreground": "#68a1f0"
+      }
+    },
+    {
+      "scope": "punctuation",
+      "settings": {
+        "foreground": "#718ca1"
+      }
+    },
+    {
+      "scope": "punctuation.accessor",
+      "settings": {
+        "foreground": "#b7c5d3"
+      }
+    },
+    {
+      "scope": ["variable", "support.variable", "meta.object.member"],
+      "settings": {
+        "foreground": "#718ca1"
+      }
+    },
+    {
+      "scope": "variable.parameter",
+      "settings": {
+        "foreground": "#ebbf83"
+      }
+    },
+    {
+      "scope": ["variable.other.constant", "variable.object.property"],
+      "settings": {
+        "foreground": "#8bd49c"
+      }
+    },
+    {
+      "scope": "variable.other.readwrite",
+      "settings": {
+        "foreground": "#b7c5d3"
+      }
+    },
+    {
+      "scope": "variable.other.readwrite.alias",
+      "settings": {
+        "foreground": "#718ca1"
+      }
+    },
+    {
+      "scope": "variable.language.super",
+      "settings": {
+        "foreground": "#b62d65"
+      }
+    },
+    {
+      "scope": [
+        "variable.language.this",
+        "variable.language.special.self",
+        "variable.parameter.function.language.special.self"
+      ],
+      "settings": {
+        "foreground": "#d98e48"
       }
     },
     {
@@ -394,10 +464,116 @@
       }
     },
     {
-      "scope": "punctuation",
+      "scope": "entity",
+      "settings": {
+        "foreground": "#70e1e8"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.class",
+        "entity.name.type.class",
+        "entity.name.type.alias",
+        "entity.name.type.instance",
+        "entity.name.type.interface",
+        "entity.name.type.enum"
+      ],
+      "settings": {
+        "foreground": "#70e1e8"
+      }
+    },
+    {
+      "scope": ["entity.name.type", "entity.name.tag"],
+      "settings": {
+        "foreground": "#008b94"
+      }
+    },
+    {
+      "scope": "entity.other",
+      "settings": {
+        "foreground": "#33ced8"
+      }
+    },
+    {
+      "scope": "support",
       "settings": {
         "foreground": "#718ca1"
       }
-    }
+    },
+    {
+      "scope": "support.type.primitive",
+      "settings": {
+        "foreground": "#33ced8"
+      }
+    },
+    {
+      "scope": [
+        "source.css entity.name.tag",
+        "source.css entity.other.attribute-name.id",
+        "source.css entity.other.attribute-name.class",
+        "source.css meta.property-name",
+        "source.css meta.property-list",
+        "source.css punctuation.definition.tag",
+        "source.css punctuation.definition.entity"
+      ],
+      "settings": {
+        "foreground": "#68a1f0"
+      }
+    },
+    {
+      "scope": "source.css entity.other.attribute-name",
+      "settings": {
+        "foreground": "#33ced8"
+      }
+    },
+    {
+      "scope": "source.css entity.other.attribute-name.pseudo-element",
+      "settings": {
+        "foreground": "#5ec4ff"
+      }
+    },
+    {
+      "scope": "source.css support.type.property-name",
+      "settings": {
+        "foreground": "#b7c5d3"
+      }
+    },
+    {
+      "scope": "source.css variable",
+      "settings": {
+        "foreground": "#ebbf83"
+      }
+    },
+    {
+      "scope": "source.css punctuation.definition.constant",
+      "settings": {
+        "foreground": "#e27e8d"
+      }
+    },
+    {
+      "scope": "source.css keyword.other.unit",
+      "settings": {
+        "foreground": "#d95468"
+      }
+    },
+    {
+      "scope": "source.css support.function",
+      "settings": {
+        "foreground": "#70e1e8"
+      }
+    },
+    {
+      "scope": "source.css meta.property-value",
+      "settings": {
+        "foreground": "#718ca1"
+      }
+    },
+    {
+      "name": "Vue special tags",
+      "scope": ["entity.name.tag.template", "entity.name.tag.script", "entity.name.tag.style"],
+      "settings": {
+        "foreground": "#70e1e8"
+      }
+    },
   ]
 }
