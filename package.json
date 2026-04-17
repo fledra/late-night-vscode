@@ -2,10 +2,11 @@
   "name": "late-night-theme",
   "displayName": "Late Night",
   "description": "A dark theme to help you burn the midnight oil",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Baran D. <baran@fledra.dev> (https://fledra.dev)",
   "publisher": "Fledra",
+  "homepage": "https://github.com/fledra/late-night-vscode",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fledra/late-night-vscode.git"
@@ -27,6 +28,11 @@
         "path": "./themes/late-night-color-theme.json"
       }
     ]
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1d252c",
+    "theme": "dark"
   },
   "scripts": {
     "package": "vsce pack"
