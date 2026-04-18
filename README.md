@@ -3,7 +3,7 @@
 Late Night is a dark theme to help you burn the midnight oil.
 It's made to be easy on the eyes with influences from City Lights and Cozy Dark.
 
-![Late Night theme preview image](./preview.png)
+![Late Night theme preview image](https://raw.githubusercontent.com/fledra/late-night-vscode/refs/heads/main/preview.png)
 
 ## Demo Files
 
