@@ -117,6 +117,7 @@
     "editorGutter.addedBackground": "#8bd49c",
     "editorGutter.deletedBackground": "#de8383",
     "editorGutter.modifiedBackground": "#285870",
+    "editorGutter.modifiedSecondaryBackground": "#21495d",
     "editorLineNumber.foreground": "#3d464e",
     "editorLineNumber.activeForeground": "#7c8792",
     "editorBracketMatch.background": "#c3cdd71c",
