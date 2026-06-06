@@ -263,6 +263,8 @@
     "quickInputList.focusBackground": "#1c242b",
     "quickInputList.focusForeground": "#c3cdd7",
 
+    "selection.background": "#47615e",
+
     "settings.focusedRowBorder": "#3d464e",
     "settings.rowHoverBackground": "#2a353d4f",
     "settings.modifiedItemIndicator": "#3c5250",
