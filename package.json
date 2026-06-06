@@ -35,7 +35,8 @@
     "theme": "dark"
   },
   "scripts": {
-    "package": "vsce pack"
+    "package": "vsce pack",
+    "bump": "pnpm version patch --message \"release v%s\" --sign-git-tag"
   },
   "devDependencies": {
     "@vscode/vsce": "^3.9.2"
